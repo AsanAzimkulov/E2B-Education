@@ -1,0 +1,90 @@
+.education-and-courses-down-banner {
+  @include ver-m(55px, 87px);
+
+  &__banner {
+    padding: 20px 15px;
+    margin-bottom: 15px;
+    /* Белый */
+
+      background: #FFFFFF;
+      /* Тень сайта */
+
+      box-shadow: -12.2082px 12.2082px 24.4164px rgba(230, 230, 230, 0.2), 12.2082px -12.2082px 24.4164px rgba(230, 230, 230, 0.2), 12.2082px 12.2082px 30.9274px rgba(230, 230, 230, 0.9);
+      border-radius: 20px;
+    &__title{
+      margin-bottom: 4px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: $ui-blue;
+    }
+    &__description{
+      color: $black;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__down-bar {
+    @include price-with-button-block;
+  }
+
+  @media(min-width: 768px){
+    &__banner{
+      margin-bottom: 20px;
+      padding: 20px;
+      &__title{
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 0;
+      }
+      &__description{
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+  }
+  @media(min-width: 1200px){
+    display: flex;
+    justify-content: start;
+    margin-top: 30px;
+    margin-bottom: 65px;
+    &__banner{
+      width: 48.71%;
+      margin-right: 2.56%;
+      padding: 25px 40px;
+      background: #F3F3F3;
+      border-radius: 30px;
+      margin-bottom: 0;
+      &__title{
+        font-size: 25px;
+        line-height: 30px;
+        color: $black;
+        margin-bottom: 15px;
+      }
+      &__description{
+        font-size: 16px;
+        line-height: 20px;
+        width: 73.85%;
+      }
+
+    }
+    &__down-bar{
+      flex-wrap: wrap;
+      min-width: 25.47%;
+      width: fit-content;
+      align-content: flex-end;
+      &__button{
+        white-space: nowrap;
+        width: 100%;
+        order: 2;
+      }
+      &__price-block{
+        margin-bottom: 20px;
+        width: 100%;
+      }
+    }
+  }
+}
+

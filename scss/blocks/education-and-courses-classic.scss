@@ -1,0 +1,80 @@
+.education-and-courses-classic{
+  // @include need-a-shadow;
+  // section{
+  //   @include ver-m(0px);
+  // }
+  // &__title{
+  //   @media(max-width: 1199.5px){
+  //     display: block !important;
+  //   }
+  // }
+  // .highlighted-express-blue-red{
+  //   margin-bottom: 5px;
+  // }
+
+
+  // .top-services{
+  //   &__item{
+  //     &__list{
+  //       &__item{
+  //         &:last-child{
+  //           height: 20px;
+  //           &::before{
+  //             content: normal;
+  //             padding: 0px;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  // .blue-ticket-hours{
+  //   position: absolute;
+  //   @include top-services-item-anti-padding;
+  // }
+  // @media(min-width: 768px){
+  //   .blue-ticket-hours{
+  //     bottom: -65px;
+  //   }
+  //   .top-services{
+  //     &__item{
+  //       &__list{
+  //         width: 100%;
+  //         &__item{
+  //           &:last-child{
+  //             height: 0px;
+  //             &::before{
+  //               content: normal;
+  //               padding: 0px;
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  // @media(min-width: 1200px){
+  //   .blue-ticket-hours{
+  //     bottom: -75px;
+  //   }
+  //   .top-services{
+  //     &__item{
+  //           &__down-bar{
+  //             &__button{
+  //               &--link{
+  //                 &::before{
+  //                   bottom: 0px;
+  //                   right: 75px;
+  //                 }
+  //               }
+  //             }
+  //       }
+  //     }
+  //   }
+  //   .highlighted-express-blue-red{
+  //     position: absolute;
+  //     top: 20px;
+  //     left: 30px
+  //   }
+  // }
+}

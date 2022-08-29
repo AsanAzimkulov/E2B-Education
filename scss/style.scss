@@ -1,0 +1,38 @@
+/// // main site styles
+// @import './main.scss';
+
+// Welcome chain styles
+
+// Global (containers, vars etc.)
+
+@import './global/variables.scss';
+
+@import './global/containers.scss';
+
+@import './global/helpers.scss';
+
+@import './global/page.scss';
+
+@import './global/uikit.scss';
+
+// Page blocks
+
+@import './blocks/education-for.scss';
+@import './blocks/education-and-courses.scss';
+@import './blocks/education-and-courses-down-banner.scss';
+@import './blocks/education-and-courses-classic.scss';
+@import './blocks/variants-and-tariffs.scss';
+
+// From welcome chain
+@import './blocks/Взято-с-welcome-chain/Изменённое/top-services.scss';
+@import './blocks/Взято-с-welcome-chain/reviewers.scss';
+@import './blocks/Взято-с-welcome-chain/promo.scss';
+@import './blocks/Взято-с-welcome-chain/modal-preview.scss';
+@import './blocks/Взято-с-welcome-chain/Изменённое/reviews.scss';
+@import './blocks/Взято-с-welcome-chain/completed-works.scss';
+// it modifications
+@import './blocks/модификации-по-дизайну/top-services.scss';
+
+// From main page
+@import './blocks/Взято-с-главной/reviews-modal.scss';
+@import './blocks/Взято-с-главной/Исправления-блоков-с-сайта/header.scss';

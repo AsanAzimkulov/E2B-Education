@@ -1,0 +1,93 @@
+.promo {
+  @media(max-width: 767.5px){
+    .btn-price__block{
+      width: 100%;
+      .btn__main{
+        width: 100% !important;
+        text-align: center;
+      }
+    }
+  }
+
+
+  .btn-price__block{
+    div{
+      span{
+        white-space: nowrap;
+      }
+    }
+
+    .btn__main {
+      @include blue-button-color;
+      white-space: nowrap !important;
+      border-radius: 15px;
+    }
+  }
+
+  &--invert{
+    @media(max-width: 767.5px){
+      .btn-price__block{
+        width: 100%;
+        .btn__main{
+          width: 100% !important;
+          text-align: center;
+        }
+      }
+    }
+    h2{
+      margin-bottom: 20px;
+    }
+    padding-bottom: 80px;
+    padding-top: 30px;
+    background: $gr-dark-blue;
+    color: white;
+    .banner__img{
+      display: none;
+    }
+    @media(min-width: 1200px){
+      padding-top: 0px;
+      padding-bottom: 0px;
+      .banner__img{
+        display: block;
+      }
+    }
+    .btn-price__block{
+      div{
+        span:last-child{
+          color: white;
+          white-space: nowrap;
+        }
+      }
+      .btn__main{
+        @include orange-button-color;
+        white-space: nowrap;
+      }
+    }
+    .ul__arrow{
+      margin-bottom: 30px;
+      li{
+        @include tick-bullet(true);
+      }
+    }
+  }
+
+  .ul__arrow{
+    margin-bottom: 30px;
+    li{
+      &::before{
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 6px;
+        content: '';
+        width:7px;
+        height: 7px;
+        background: $list-bullets;
+        border-radius: 50%;
+      }
+    }
+  }
+  
+  }
+
+
