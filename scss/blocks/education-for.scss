@@ -1,9 +1,14 @@
 .education-for {
   @include standart-section-spacing;
   color: $black;
-  overflow-x: visible !important;
+  @at-root{
+    body.page__body section#{&}{
+      overflow-x: visible !important;
+    }
+  }
 
   &__wrapper {
+
   }
 
   &__title {

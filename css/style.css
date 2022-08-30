@@ -143,7 +143,6 @@
   margin-top: 80px;
   margin-bottom: 80px;
   color: #2D2D2D;
-  overflow-x: visible !important;
 }
 @media (min-width: 768px) {
   .education-for {
@@ -157,6 +156,10 @@
     margin-bottom: 120px;
   }
 }
+body.page__body section.education-for {
+  overflow-x: visible !important;
+}
+
 .education-for__title::before {
   background: #F3F3F3;
   content: "";
