@@ -9,7 +9,6 @@ section{
   @include ver-m(0px);
 }
 
-@include need-a-shadow;
 
   & .top-services{
 
@@ -139,7 +138,6 @@ section{
   position: absolute;
   @include top-services-item-anti-padding;
 }
-@include need-a-shadow;
 
   & .top-services{
       &__item{
@@ -180,8 +178,6 @@ section{
 
 .top-services--modificated-ypay-no-extras{
   & .top-services{
-    // max-width: 100vw;
-    // overflow-x: hidden !important;
     @media(min-width: 768px) and (max-width: 1199.5px){
       &__item{
         &__down-bar{

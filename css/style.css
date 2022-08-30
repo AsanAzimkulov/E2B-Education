@@ -37,11 +37,6 @@
   overflow-x: hidden;
   max-width: 100vw;
 }
-.page__body > section:not(.breadcrumbs) {
-  max-width: 100vw !important;
-  overflow-x: hidden !important;
-  overflow-y: visible;
-}
 
 @media (max-width: 991px) {
   .footer {
@@ -1690,6 +1685,12 @@ body.page__body section.triplet-cards-about {
     margin-bottom: 120px;
   }
 }
+section.top-services {
+  max-width: 100vw;
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+}
+
 .top-services__title {
   font-weight: 600;
   font-size: 20px;
@@ -3341,9 +3342,6 @@ body.page__body section.triplet-cards-about {
   }
 }
 
-.top-services--modificated-ypay {
-  overflow-x: visible !important;
-}
 @media (max-width: 375px) {
   .top-services--modificated-ypay .slider__item {
     padding: 0px !important;
@@ -3441,9 +3439,6 @@ body.page__body section.triplet-cards-about {
   }
 }
 
-.top-services--modificated-ypay:not(.top-services--modificated-ypay-no-extras) {
-  overflow-x: visible !important;
-}
 @media (min-width: 768px) {
   .top-services--modificated-ypay:not(.top-services--modificated-ypay-no-extras) .blue-ticket-hours {
     bottom: -65px;
