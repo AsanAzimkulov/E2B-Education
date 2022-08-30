@@ -1,0 +1,75 @@
+.triplet-cards-about {
+
+  @at-root {
+    body.page__body section#{&} {
+      @include need-a-shadow;
+    }
+  }
+  color: $black;
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  &__item {
+    &__title{
+
+    }
+    &__description{
+      font-size: 15px;
+      line-height: 19.5px;
+    }
+    &__button{
+      @include blue-button;
+    }
+  }
+  @media(min-width: 768px){
+    &__title{
+      font-size: 36px;
+      line-height: 41px;
+      width: 75.25%;
+    }
+    &__description{
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &__item{
+      &__title{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+      }
+      &__description{
+        font-size: 16px;
+        line-height: 21px;
+      }
+    }
+  }
+
+  @media(min-width: 1200px){
+    &__title{
+      width: 100%;
+    }
+    &__description{
+      width: 65.81%;
+      margin-bottom: 30px;
+    }
+  }
+  
+}
+

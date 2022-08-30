@@ -1,0 +1,111 @@
+.education-and-courses-video{
+  .slider{
+    &__item{
+      @media(max-width: 767.5px){
+        padding: 0px !important;
+        }
+    }
+  }
+  .top-services{
+    @media(max-width: 767.5px){
+      &__title{
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      }  
+    &__wrapper{
+      @media(max-width: 767.5px){
+      padding: 0px;
+      }   
+    }
+  }
+  &__item{
+    color: $black;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    width: 100%;
+    padding: 18px 15px;
+    &__br{
+      box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+      border-radius: 20px;
+    }
+    &__title{
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 10px;
+      position: relative;
+    }
+    &__description{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 20px;
+    }
+    &__button{
+      @include blue-button;
+      width: 86.2%;
+      margin: 0 auto;
+    }
+    .plyr__video{
+      margin-bottom: 20px;
+      filter: drop-shadow(-15px 15px 30px rgba(230, 230, 230, 0.2)) drop-shadow(15px -15px 30px rgba(230, 230, 230, 0.2)) drop-shadow(15px 15px 38px rgba(230, 230, 230, 0.9));
+      border-radius: 20px;
+      overflow: hidden;
+      &>div>img{
+        width: 100%;
+        height: auto;
+        margin: -9.33% 0px;
+        transform: scaleY(1.01);
+      }
+    }
+  }
+  @media(min-width: 768px){
+    .top-services{
+      &__slider {
+        .slider{
+          &__container{
+            overflow-x: visible !important;  
+          }
+        }
+      }
+    }
+    &__item{
+      padding: 0px;
+      background-color:  transparent;
+      box-shadow: none;
+
+      &__title{
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      &__description{
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 30px;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      &__button{
+        margin-left: 15px;
+        margin-right: auto;
+        width: 42.43%
+      }
+      &__br{
+
+      }
+
+      .plyr__video{
+
+      }
+    }
+  }
+  @media(min-width: 1200px){
+    &__item{
+      padding-bottom: 20px;
+    }
+  }
+}

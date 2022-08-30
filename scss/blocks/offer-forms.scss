@@ -1,0 +1,113 @@
+.offer-forms {
+  @include standart-section-spacing;
+
+  &__list{
+
+  }
+  &__item {
+    background: #FFFFFF;
+    /* Основная тень */   
+    box-shadow: $main-shadow;
+    border-radius: 30px;
+    @include item-spacing(20px);
+    &__title{
+      width: 100%;
+      @include ver-m(10px, 15px);
+      text-align: center;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    &__description{
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 20px;
+    }
+
+  &__picture {
+    border-radius: 30px;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__image {
+  }
+
+  &__down-bar {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__button{
+      width: 100%;
+    }
+    &__link-info{
+      @include link-color;
+      color: $ui-blue;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 130%;
+      text-decoration: none;
+      width: fit-content;
+    }
+    &__price{
+      width: fit-content;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 23px;
+      color: #FF6871;
+    }
+  }
+
+}
+@media(min-width: 768px){
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item{
+    width: 47.88%;
+    margin-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    &__description{
+      margin-bottom: 40px;
+    }
+    &:nth-child(3){
+      margin-top: 40px;
+    }
+    &__down-bar{
+      padding-bottom: 25px; 
+    }
+}
+
+}
+@media(min-width: 1200px){
+  &__item{
+    width: 31.62%;
+    margin-bottom: 0px;
+    margin-top: 0px !important;
+    &__title{
+      margin-bottom: 15px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    &__description{
+      margin-bottom: 45px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    &__down-bar{
+      padding-bottom: 25px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+}
+
+}
+}
+

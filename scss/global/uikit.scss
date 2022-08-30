@@ -582,6 +582,47 @@
 }
 
 
+// Blog
+
+
+@mixin link-color(){
+  color: $ui-blue;
+  &:hover{
+    color: #FF6871;
+  }
+  &:active{
+    color: $ui-blue-active;
+  }
+}
+
+@mixin bullet-round($color, $empty){
+  > li{
+    list-style: none;
+    padding-left: 18px;
+    position: relative;
+    @media(min-width: 768px){
+      padding-left: 22px;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      top: 6px;
+      @media(min-width: 575px){
+        top: 9px;
+      }
+      @if $empty {
+        outline-offset: -1px;
+        outline: 1px solid $color;
+      } @else {
+        background: $color ;
+      }
+    }
+  }
+}
+
 
 
 
@@ -689,8 +730,8 @@
   }
 }
 
-@mixin need-a-shadow{
-  overflow: visible;
+@mixin need-a-shadow(){
+  overflow-x: visible !important;
 }
 
 .highlighted-express-blue-red{
