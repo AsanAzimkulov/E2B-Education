@@ -442,14 +442,22 @@ body.page__body section.education-for {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.5px) {
+  .education-and-courses .top-services__item__down-bar {
     width: 100%;
     align-items: end;
   }
+}
+@media (min-width: 768px) {
   .education-and-courses .top-services__item__down-bar__price-block {
     width: 100%;
     margin-top: 25px;
     margin-bottom: 20px;
   }
+}
+@media (min-width: 768px) {
   .education-and-courses .top-services__item__down-bar__button--link-brd, .education-and-courses .top-services__item__down-bar__button--blue {
     width: 47.53%;
   }
