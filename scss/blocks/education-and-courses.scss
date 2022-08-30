@@ -1,8 +1,5 @@
 .education-and-courses{
   @include need-a-shadow;
-  .education-and-courses-down-banner{
-    margin-bottom: 0px;
-  }
   &__image{
     &-wrapper{
       position: relative;
@@ -128,5 +125,6 @@
   .education-and-courses-down-banner{
     margin-top: 0px;
     position: relative;
+    margin-bottom: 30px;
   }
 }

@@ -321,9 +321,6 @@ body.page__body section.education-for {
 .education-and-courses {
   overflow-x: visible !important;
 }
-.education-and-courses .education-and-courses-down-banner {
-  margin-bottom: 0px;
-}
 .education-and-courses__image-wrapper {
   position: relative;
 }
@@ -572,6 +569,7 @@ body.page__body section.education-for {
 .education-and-courses .education-and-courses-down-banner {
   margin-top: 0px;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .education-and-courses-down-banner {
@@ -696,6 +694,12 @@ body.page__body section.education-for {
   .education-and-courses-down-banner__banner__description {
     font-size: 18px;
     line-height: 22px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.5px) {
+  .education-and-courses-down-banner__down-bar {
+    align-items: center;
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
