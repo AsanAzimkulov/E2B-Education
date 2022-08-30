@@ -442,6 +442,8 @@ body.page__body section.education-for {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
+    align-items: end;
   }
   .education-and-courses .top-services__item__down-bar__price-block {
     width: 100%;
