@@ -125,6 +125,8 @@
   .education-and-courses-down-banner{
     margin-top: 0px;
     position: relative;
-    margin-bottom: 30px;
+    @media(min-width: 1200px){
+      margin-bottom: 30px;
+    }
   }
 }

@@ -569,7 +569,11 @@ body.page__body section.education-for {
 .education-and-courses .education-and-courses-down-banner {
   margin-top: 0px;
   position: relative;
-  margin-bottom: 30px;
+}
+@media (min-width: 1200px) {
+  .education-and-courses .education-and-courses-down-banner {
+    margin-bottom: 30px;
+  }
 }
 
 .education-and-courses-down-banner {
