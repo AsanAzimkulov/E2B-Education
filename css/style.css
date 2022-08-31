@@ -155,6 +155,9 @@ body.page__body section.education-for {
   overflow-x: visible !important;
 }
 
+.education-for__title {
+  width: 70%;
+}
 .education-for__title::before {
   background: #F3F3F3;
   content: "";
