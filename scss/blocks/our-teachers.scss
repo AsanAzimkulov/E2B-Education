@@ -95,6 +95,10 @@
     padding: 2px;
     width: 65px;
     height: 65px;
+    &:hover{
+      transform: scale(1.15);
+    }
+    cursor: pointer;
   }
   @media(min-width: 768px){
     &__items{

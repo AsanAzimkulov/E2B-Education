@@ -8,24 +8,26 @@
     //   overflow-y: visible;
     // }
 
-Если будет на мобилках листаться влево вправо, то ко всем блокам-слайдерам, в стили блока добавить блок кода - 
+Если будет на мобилках листаться влево вправо, то ко всем блокам-слайдерам, в стили блока добавить блок кода(убирёт скролл) - 
 
   @at-root{
     section#{&}{
-      max-width: 100vw;
       overflow-x: hidden !important;
       max-width: 100vw !important;
+      padding-bottom: 25px;
+      @include extra-section-spacing(-25px, -25px, 25px);
     }
   }
 
 Например: 
 .block{
 
- @at-root{
+  @at-root{
     section#{&}{
-      max-width: 100vw;
       overflow-x: hidden !important;
       max-width: 100vw !important;
+      padding-bottom: 25px;
+      @include extra-section-spacing(-25px, -25px, 25px);
     }
   }
 

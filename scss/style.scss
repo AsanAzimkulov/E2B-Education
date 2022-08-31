@@ -19,10 +19,10 @@
 
 @import './blocks/education-for.scss';
 @import './blocks/education-and-courses.scss';
-@import './blocks/education-and-courses-down-banner.scss';
+// @import './blocks/education-and-courses-down-banner.scss';--------------ПОПРОСИЛИ УБРАТЬ СО СТРАНИЦЫ(В HTML ЗАКОММЕНТИЛ).
 @import './blocks/education-and-courses-classic.scss';
 @import './blocks/education-and-courses-video.scss';
-@import './blocks/variants-and-tariffs.scss';
+// @import './blocks/variants-and-tariffs.scss';--------------------------ПОПРОСИЛИ УБРАТЬ СО СТРАНИЦЫ(В HTML ЗАКОММЕНТИЛ).
 @import './blocks/our-teachers.scss';
 @import './blocks/triplet-cards-about.scss';
 @import './blocks/offer-forms.scss';
@@ -41,3 +41,7 @@
 // From main page
 @import './blocks/Взято-с-главной/reviews-modal.scss';
 @import './blocks/Взято-с-главной/Исправления-блоков-с-сайта/header.scss';
+
+// From blog page 
+
+@import './blocks/Со-страницы-блог/certificate-modal.scss';

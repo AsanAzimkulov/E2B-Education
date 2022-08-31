@@ -301,6 +301,31 @@ $(document).ready(function () {
 });
 
 
+function onOpenCertificateModal(e) {
+  const src = e.currentTarget.querySelector('img').getAttribute('src');
+  document.querySelector('.certificate-modal__image').setAttribute('src', src);
+  $('html').addClass('no-scroll-y');
+  document.body.classList.add('modal-certificate-show');
+  document.body.classList.add('no-scroll-y');
+}
+
+function onCloseCertificateModal() {
+  $('html').removeClass('no-scroll-y');
+  // Убираем предыдущий скролл
+  document.querySelector('.certificate-modal').scrollTo(0, 0);
+  document.body.classList.remove('modal-certificate-show');
+  document.body.classList.remove('no-scroll-y');
+}
+
+document.querySelectorAll('.block-with-certificates__item').forEach(image => image.addEventListener('click', onOpenCertificateModal));
+
+document.querySelector('.certificate-modal__close').addEventListener('click', onCloseCertificateModal);
+
+document.querySelector('.certificate-modal').addEventListener('click', function (e) {
+  if (e.target === this) {
+    onCloseCertificateModal();
+  }
+});
 $(document).ready(function () {
 
   // Новый slider(отзывы)
@@ -1117,7 +1142,6 @@ ChiefSlider.prototype.refresh = function () {
 };
 
 $(document).ready(function () {
-  if (window.matchMedia('(max-width: 767.5px)').matches) return;
   const items = document.querySelectorAll('.toolbar-three-column-toggles');
 
   const createTabs = (element) => {
@@ -1130,7 +1154,11 @@ $(document).ready(function () {
     handles.forEach(handle => handle.addEventListener('click', toggleTab))
 
     function toggleTab(e) {
-      e.preventDefault();
+      var position = $(document).scrollTop();
+      setTimeout(function () {
+        window.scrollTo(0, position);
+      }, 0);
+
       handles.forEach(tab => tab.classList.remove('toolbar-three-column-toggles__toggle--active'));
       e.target.classList.add('toolbar-three-column-toggles__toggle--active');
       showActiveTab(e.target);

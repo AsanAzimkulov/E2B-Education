@@ -3,9 +3,10 @@
   color: $black;
   @at-root{
     section#{&}{
-      max-width: 100vw;
       overflow-x: hidden !important;
       max-width: 100vw !important;
+      padding-bottom: 25px;
+      @include extra-section-spacing(-25px, -25px, 25px);
     }
   }
   
@@ -236,6 +237,8 @@
       width: 90%;
       padding: 46px 12px 30px 30px;
       position: relative;
+      align-content: flex-start;
+      padding-bottom: 167px !important;
       &__image{
         width: 100%;
         &__wrapper{
@@ -267,8 +270,14 @@
         margin-bottom: 25px !important;
       }
       &__down-bar{
+
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+
         display: flex;
         flex-wrap: wrap;
+        align-content: flex-end;
         &__price-block{
 
           margin-left: 15px;

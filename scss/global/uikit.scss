@@ -687,9 +687,14 @@
 }
 
 .toolbar-three-column-toggles {
-  @media(min-width: 768px){
-    display: flex !important;
-    justify-content: space-between;
+  display: flex !important;
+  justify-content: space-between;
+  @media(max-width: 768px){
+    flex-wrap: wrap;
+    &__toggle{
+      flex: auto !important;
+      width: 100% !important;
+    }
   }
   background: #FFFFFF;
   box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.15);

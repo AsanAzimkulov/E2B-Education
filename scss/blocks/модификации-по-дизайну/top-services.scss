@@ -113,6 +113,16 @@ section{
 .top-services--modificated-ypay:not(.top-services--modificated-ypay-no-extras){
 
 @media(min-width: 768px){
+  .slider__container{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  @media(max-width: 1199.5px){
+  .slider__item{
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+}
   .blue-ticket-hours{
     bottom: -65px;
   }

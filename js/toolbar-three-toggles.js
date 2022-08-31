@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  if (window.matchMedia('(max-width: 767.5px)').matches) return;
   const items = document.querySelectorAll('.toolbar-three-column-toggles');
 
   const createTabs = (element) => {
@@ -12,7 +11,11 @@ $(document).ready(function () {
     handles.forEach(handle => handle.addEventListener('click', toggleTab))
 
     function toggleTab(e) {
-      e.preventDefault();
+      var position = $(document).scrollTop();
+      setTimeout(function () {
+        window.scrollTo(0, position);
+      }, 0);
+
       handles.forEach(tab => tab.classList.remove('toolbar-three-column-toggles__toggle--active'));
       e.target.classList.add('toolbar-three-column-toggles__toggle--active');
       showActiveTab(e.target);

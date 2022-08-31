@@ -1,0 +1,155 @@
+.certificate-modal {
+  font-family: 'Montserrat';
+  color: $black;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  &--show{
+    display: block !important;
+  }
+  &__wrapper{
+    margin-top: 127px;
+    margin-bottom: 88px;
+  }
+  &__close{
+    cursor: pointer;
+    &__wrapper{
+      position: relative;
+    }
+    bottom: -19px;
+    right: -11px;
+    position: absolute;  
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    box-shadow: 0px 15px 38px rgba(0, 0, 0, 0.2);
+    border-radius: 10.3448px;
+    &:before{
+      content: '';
+      width: 25.5px;
+      height: 25.25px;
+      background-image: url('../../images/icons/crosshair.svg');
+      background-size: 25.5px 25.25px;
+      position: absolute;
+      margin-top: 7.44px;
+      margin-left: 7.13px;
+    }
+  }
+
+  @media(min-width: 768px) {
+    &__wrapper{
+      margin-bottom: 151px;
+    }
+    &__close{
+      bottom: -35px;
+      right: -16px;
+      position: absolute;  
+      width: 58px;
+      height: 58px;
+      background-color: white;
+      box-shadow: 0px 15px 38px rgba(0, 0, 0, 0.2);
+      border-radius: 15px;
+
+      &:before{
+        content: '';
+        width: 37px;
+        height: 36.6px;
+        background-image: url('../../images/icons/crosshair.svg');
+        background-size: 37px 36.6px;
+        position: absolute;
+        margin-top: 10.78px;
+        margin-left: 10.33px;
+      }
+    }
+  }
+
+  @media(min-width: 769px){
+    &__wrapper{
+      padding: 0px ;
+    }
+  }
+
+  @media(min-width: 1440px){
+    &__close{
+      bottom: -41px;
+      right: -15px;
+      position: absolute;  
+      width: 58px;
+      height: 58px;
+      background-color: white;
+      box-shadow: 0px 15px 38px rgba(0, 0, 0, 0.2);
+      border-radius: 15px;
+
+      &:before{
+        content: '';
+        width: 37px;
+        height: 36.6px;
+        background-image: url('../../images/icons/crosshair.svg');
+        background-size: 37px 36.6px;
+        position: absolute;
+        margin-top: 10.78px;
+        margin-left: 10.33px;
+      }
+    }
+  }
+
+  @media(min-width: 1920px){
+    &__wrapper{
+      margin-bottom: 455px;
+    }
+  }
+}
+
+.certificate-modal{
+  &__wrapper{
+    background: white;
+    padding: 36.5px;
+    border-radius: 30px;
+    @media(max-width: 768px){
+      max-width: calc(100vw - 60px);
+      padding: 25.5px;
+    }
+    @media(max-width: 575px){
+      max-width: calc(100vw - 30px);
+    }
+  }
+  @media(max-width: 768px){
+    &__close{
+      bottom: -2px;
+      right: -37px;
+    }
+  }
+  &__image{
+    width: 100%;
+    margin: 0px;
+  }
+  @media(min-width: 768px){
+    &__close{
+      bottom: -6px;
+      right: -52px;
+    }
+    @media(max-width: 768.5px){
+      &__wrapper{
+        max-width: 708px;
+      }
+    }
+  }
+  @media(min-width: 1440px){
+    &__close{
+      bottom: -8px;
+      right: -53px;
+    }
+  }
+}
+
+.modal-certificate-show{
+  .certificate-modal{
+    display: block !important;
+  }
+}
