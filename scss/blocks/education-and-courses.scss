@@ -6,6 +6,7 @@
         }
     }
   }
+
   .top-services{
     @media(max-width: 767.5px){
       &__title{
@@ -21,21 +22,23 @@
   }
   &__image{
     &-wrapper{
+      width: 100%;
+      text-align: center;
       position: relative;
       .blue-ticket-hours{
         position: absolute;
         @include top-services-item-anti-padding;
-        @media(max-width: 1199.5px){
-          @media (min-width: 768px){
-            right: -8.4%;
-        }
-          @media (min-width: 769px){
-            right: -6.3%;
-        }
-        @media (min-width: 991px){
-          right: -48.5%;
-      }
-        }
+      //   @media(max-width: 1199.5px){
+      //     @media (min-width: 768px){
+      //       right: -8.4%;
+      //   }
+      //     @media (min-width: 769px){
+      //       right: -6.3%;
+      //   }
+      //   @media (min-width: 991px){
+      //     right: -48.5%;
+      // }
+      //   }
       }
     }
   }

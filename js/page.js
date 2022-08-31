@@ -15,7 +15,7 @@ $(document).ready(function () {
     }
   }
 
-  // Слайдер для блока обучение и курсы
+  // Слайдер для блока обучение и курсы(еще и для блока с видео)
   if (window.matchMedia("(max-width: 1199.5px)").matches) {
     if ($('.education-and-courses .slider__item').length > 1) {
       document.querySelectorAll('.education-and-courses .slider').forEach(el => {
@@ -26,15 +26,6 @@ $(document).ready(function () {
 
 
   // Слайдер для блока обучение и курсы(2)
-  if (window.matchMedia("(max-width: 1199.5px)").matches) {
-    if ($('.education-and-courses-video .slider__item').length > 1) {
-      document.querySelectorAll('.education-and-courses-video .slider').forEach(el => {
-        new ChiefSlider(el);
-      })
-    }
-  }
-
-  // Слайдер для блока обучение и курсы(3)
   if (window.matchMedia("(max-width: 1199.5px)").matches) {
     if ($('.education-and-courses-classic .slider__item').length > 1) {
       document.querySelectorAll('.education-and-courses-classic .slider').forEach(el => {

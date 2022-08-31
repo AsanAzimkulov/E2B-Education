@@ -343,6 +343,8 @@ body.page__body section.education-for {
   }
 }
 .education-and-courses__image-wrapper {
+  width: 100%;
+  text-align: center;
   position: relative;
 }
 .education-and-courses__image-wrapper .blue-ticket-hours {
@@ -357,21 +359,6 @@ body.page__body section.education-for {
 @media (min-width: 1200px) {
   .education-and-courses__image-wrapper .blue-ticket-hours {
     right: -12px;
-  }
-}
-@media (max-width: 1199.5px) and (min-width: 768px) {
-  .education-and-courses__image-wrapper .blue-ticket-hours {
-    right: -8.4%;
-  }
-}
-@media (max-width: 1199.5px) and (min-width: 769px) {
-  .education-and-courses__image-wrapper .blue-ticket-hours {
-    right: -6.3%;
-  }
-}
-@media (max-width: 1199.5px) and (min-width: 991px) {
-  .education-and-courses__image-wrapper .blue-ticket-hours {
-    right: -48.5%;
   }
 }
 .education-and-courses .top-services__title::before {
@@ -1781,6 +1768,7 @@ section.top-services {
     margin-bottom: 25px;
   }
   .top-services__item__title {
+    width: 100%;
     margin-bottom: 20px;
     font-size: 25px;
     line-height: 30px;
