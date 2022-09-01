@@ -91,6 +91,24 @@
       max-width: 100% !important;
     }
   }
+  @media(max-width:768px){
+    .slider{
+      &__control{
+        &[data-slide="prev"]{
+          left: 30px;
+          @media(max-width: 575px){
+            left: 15px;
+          }
+        }
+        &[data-slide="next"]{
+          right: 30px;
+          @media(max-width: 575px){
+            right: 15px;
+          }
+        }
+      }
+    }
+  }
 
   @media(min-width: 768px){
     .top-services{
@@ -119,6 +137,21 @@
         }
       }
     }
+  }
+
+  @media(max-width: 1200px){
+          .top-services{
+        &__item{
+          &__down-bar{
+            &__button{
+              &--link-brd{
+                padding-top: 11.3px !important;
+                padding-bottom: 11.3px !important;
+              }
+            }
+          }
+        }
+      }
   }
 
   @media(min-width: 1200px){

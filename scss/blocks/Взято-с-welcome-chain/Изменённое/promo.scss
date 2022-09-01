@@ -1,5 +1,8 @@
 .promo {
   @media(max-width: 767.5px){
+    &--invert{
+      padding-bottom: 50px !important;
+    }
     .btn-price__block{
       width: 100%;
       .btn__main{

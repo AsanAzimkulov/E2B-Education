@@ -139,28 +139,28 @@ section{
     top: 20px;
     left: 30px
   }
+
   .blue-ticket-hours{
-    bottom: -75px;
+
   }
 }
 
 .blue-ticket-hours{
   position: absolute;
-  @include top-services-item-anti-padding;
+  // @include top-services-item-anti-padding;
+  bottom: 163px;
+  right: 0px;
+  margin-bottom: 0px;
 }
 
   & .top-services{
       &__item{
+        position: relative;
         &__list{
-          &__item{
-            &:last-child{
-              height: 20px;
-              &::before{
-                content: normal;
-                padding: 0px;
-              }
-            }
-          }
+          margin-bottom: 46px;
+        }
+        .blue-ticket-hours{
+
         }
       }
 
@@ -168,19 +168,28 @@ section{
 
         &__item{
           &__list{
+            margin-bottom: 30px;
             width: 100%;
             &__item{
-              &:last-child{
-                height: 0px;
-                &::before{
-                  content: normal;
-                  padding: 0px;
-                }
-              }
+                  .blue-ticket-hours{
+
+                  }
             }
           }
     }
   }  
+  @media(min-width: 1200px){
+
+    &__item{
+      .blue-ticket-hours{
+        bottom: 110px;
+      }
+      &__list{
+        margin-bottom: 25px;
+        width: 100%;
+      }
+}
+}  
   }
 }
 

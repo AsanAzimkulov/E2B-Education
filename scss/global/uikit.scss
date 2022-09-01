@@ -689,18 +689,20 @@
 .toolbar-three-column-toggles {
   display: flex !important;
   justify-content: space-between;
-  @media(max-width: 768px){
+
+  @media(max-width: 767.5px){
     flex-wrap: wrap;
     &__toggle{
       flex: auto !important;
       width: 100% !important;
     }
   }
+
   background: #FFFFFF;
   box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
   margin-bottom: 30px;
-  @media(min-width: 768px){
+  @media(min-width: 767.5px){
     margin-bottom: 45px;
   }
   &__toggle {

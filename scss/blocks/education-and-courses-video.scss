@@ -61,6 +61,24 @@
       }
     }
   }
+  @media(max-width:768px){
+    .slider{
+      &__control{
+        &[data-slide="prev"]{
+          left: 30px;
+          @media(max-width: 575px){
+            left: 15px;
+          }
+        }
+        &[data-slide="next"]{
+          right: 30px;
+          @media(max-width: 575px){
+            right: 15px;
+          }
+        }
+      }
+    }
+  }
   @media(min-width: 768px){
     .top-services{
       &__slider {

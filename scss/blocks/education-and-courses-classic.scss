@@ -1,7 +1,20 @@
 .education-and-courses-classic{
-  .top-services__title{
+  .top-services {
+    &__title{
     &::before{
       content: normal;
     }
+    }
+}
+.top-services__slider{
+  &.slider{
+    &__item{
+      padding: 0px;
+    }
+      .slider__container{
+        overflow-x: visible !important;
+      }
+  
   }
+}
 }

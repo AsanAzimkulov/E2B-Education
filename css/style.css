@@ -78,7 +78,7 @@
   border-radius: 15px;
   margin-bottom: 30px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767.5px) {
   .toolbar-three-column-toggles {
     flex-wrap: wrap;
   }
@@ -87,7 +87,7 @@
     width: 100% !important;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 767.5px) {
   .toolbar-three-column-toggles {
     margin-bottom: 45px;
   }
@@ -457,6 +457,26 @@ body.page__body section.education-for {
 .education-and-courses .slider__item {
   max-width: 100% !important;
 }
+@media (max-width: 768px) {
+  .education-and-courses .slider__control[data-slide=prev] {
+    left: 30px;
+  }
+}
+@media (max-width: 768px) and (max-width: 575px) {
+  .education-and-courses .slider__control[data-slide=prev] {
+    left: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .education-and-courses .slider__control[data-slide=next] {
+    right: 30px;
+  }
+}
+@media (max-width: 768px) and (max-width: 575px) {
+  .education-and-courses .slider__control[data-slide=next] {
+    right: 15px;
+  }
+}
 @media (min-width: 768px) {
   .education-and-courses .top-services__item__down-bar {
     display: flex;
@@ -483,6 +503,12 @@ body.page__body section.education-for {
   }
   .education-and-courses .top-services__item__down-bar__button--link-brd {
     order: 2;
+  }
+}
+@media (max-width: 1200px) {
+  .education-and-courses .top-services__item__down-bar__button--link-brd {
+    padding-top: 11.3px !important;
+    padding-bottom: 11.3px !important;
   }
 }
 @media (min-width: 1200px) {
@@ -603,6 +629,12 @@ body.page__body section.education-for {
 .education-and-courses-classic .top-services__title::before {
   content: normal;
 }
+.education-and-courses-classic .top-services__slider.slider__item {
+  padding: 0px;
+}
+.education-and-courses-classic .top-services__slider.slider .slider__container {
+  overflow-x: visible !important;
+}
 
 @media (max-width: 767.5px) {
   .education-and-courses-video .slider__item {
@@ -684,6 +716,26 @@ body.page__body section.education-for {
   height: auto;
   margin: -9.33% 0px;
   transform: scaleY(1.01);
+}
+@media (max-width: 768px) {
+  .education-and-courses-video .slider__control[data-slide=prev] {
+    left: 30px;
+  }
+}
+@media (max-width: 768px) and (max-width: 575px) {
+  .education-and-courses-video .slider__control[data-slide=prev] {
+    left: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .education-and-courses-video .slider__control[data-slide=next] {
+    right: 30px;
+  }
+}
+@media (max-width: 768px) and (max-width: 575px) {
+  .education-and-courses-video .slider__control[data-slide=next] {
+    right: 15px;
+  }
 }
 @media (min-width: 768px) {
   .education-and-courses-video .top-services__slider .slider__container {
@@ -2166,6 +2218,9 @@ section.top-services {
 }
 
 @media (max-width: 767.5px) {
+  .promo--invert {
+    padding-bottom: 50px !important;
+  }
   .promo .btn-price__block {
     width: 100%;
   }
@@ -3257,41 +3312,32 @@ section.top-services {
     top: 20px;
     left: 30px;
   }
-  .top-services--modificated-ypay:not(.top-services--modificated-ypay-no-extras) .blue-ticket-hours {
-    bottom: -75px;
-  }
 }
 .top-services--modificated-ypay:not(.top-services--modificated-ypay-no-extras) .blue-ticket-hours {
   position: absolute;
-  right: -15px;
+  bottom: 163px;
+  right: 0px;
+  margin-bottom: 0px;
 }
-@media (min-width: 768px) {
-  .top-services--modificated-ypay:not(.top-services--modificated-ypay-no-extras) .blue-ticket-hours {
-    right: -20px;
-  }
+.top-services--modificated-ypay:not(.top-services--modificated-ypay-no-extras) .top-services__item {
+  position: relative;
 }
-@media (min-width: 1200px) {
-  .top-services--modificated-ypay:not(.top-services--modificated-ypay-no-extras) .blue-ticket-hours {
-    right: -12px;
-  }
-}
-.top-services--modificated-ypay:not(.top-services--modificated-ypay-no-extras) .top-services__item__list__item:last-child {
-  height: 20px;
-}
-.top-services--modificated-ypay:not(.top-services--modificated-ypay-no-extras) .top-services__item__list__item:last-child::before {
-  content: normal;
-  padding: 0px;
+.top-services--modificated-ypay:not(.top-services--modificated-ypay-no-extras) .top-services__item__list {
+  margin-bottom: 46px;
 }
 @media (min-width: 768px) {
   .top-services--modificated-ypay:not(.top-services--modificated-ypay-no-extras) .top-services__item__list {
+    margin-bottom: 30px;
     width: 100%;
   }
-  .top-services--modificated-ypay:not(.top-services--modificated-ypay-no-extras) .top-services__item__list__item:last-child {
-    height: 0px;
+}
+@media (min-width: 1200px) {
+  .top-services--modificated-ypay:not(.top-services--modificated-ypay-no-extras) .top-services__item .blue-ticket-hours {
+    bottom: 110px;
   }
-  .top-services--modificated-ypay:not(.top-services--modificated-ypay-no-extras) .top-services__item__list__item:last-child::before {
-    content: normal;
-    padding: 0px;
+  .top-services--modificated-ypay:not(.top-services--modificated-ypay-no-extras) .top-services__item__list {
+    margin-bottom: 25px;
+    width: 100%;
   }
 }
 
