@@ -49,6 +49,9 @@
       margin: 0 auto;
     }
     .plyr__video{
+      &>div{
+        transform: scale(1.01);
+      }
       .js-player:hover:before {
         opacity: 1
       }

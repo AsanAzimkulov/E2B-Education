@@ -713,6 +713,9 @@ body.page__body section.education-for {
   border-radius: 20px;
   overflow: hidden;
 }
+.education-and-courses-video__item .plyr__video > div {
+  transform: scale(1.01);
+}
 .education-and-courses-video__item .plyr__video .js-player:hover:before {
   opacity: 1;
 }
