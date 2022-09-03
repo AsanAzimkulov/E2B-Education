@@ -3471,6 +3471,7 @@ section.top-services {
 }
 
 .reviews-modal {
+  overflow-y: scroll;
   font-family: "Montserrat";
   color: #2D2D2D;
   z-index: 20;

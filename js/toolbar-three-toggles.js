@@ -3,10 +3,14 @@ $(document).ready(function () {
 
   items.forEach((item) => {
     const handles = item.querySelectorAll('a');
+
     const InitActiveHandle = [...handles].find(handle => handle.classList.contains('toolbar-three-column-toggles__toggle--active'));
+
     handles.forEach((handle) => {
+
       handle.addEventListener('click', (e) => {
-        handles.forEach(handle => handle.classList.remove('toolbar-three-column-toggles__toggle--active'));
+
+        handles.forEach(handle => handle.classList.remove('toolbar-three-column-toggles__toggle--active'));       
         handle.classList.add('toolbar-three-column-toggles__toggle--active');
         setTimeout(() => {
           handle.classList.remove('toolbar-three-column-toggles__toggle--active');
