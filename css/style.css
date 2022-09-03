@@ -706,10 +706,118 @@ body.page__body section.education-for {
   color: white;
 }
 .education-and-courses-video__item .plyr__video {
+  position: relative;
+  cursor: pointer;
   margin-bottom: 20px;
   filter: drop-shadow(-15px 15px 30px rgba(230, 230, 230, 0.2)) drop-shadow(15px -15px 30px rgba(230, 230, 230, 0.2)) drop-shadow(15px 15px 38px rgba(230, 230, 230, 0.9));
   border-radius: 20px;
   overflow: hidden;
+}
+.education-and-courses-video__item .plyr__video .js-player:hover:before {
+  opacity: 1;
+}
+.education-and-courses-video__item .plyr__video .js-player:hover:after {
+  opacity: 1;
+}
+.education-and-courses-video__item .plyr__video .js-player:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 40px;
+  width: 40px;
+  border: 4px solid #fff;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background: #0071BC;
+  z-index: 1;
+  opacity: 1;
+}
+@media (min-width: 768px) {
+  .education-and-courses-video__item .plyr__video .js-player:before {
+    border: 4.79px solid #fff;
+    width: 67px;
+    height: 67px;
+  }
+}
+.education-and-courses-video__item .plyr__video .plyr__control.plyr__control--overlaid {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 40px;
+  width: 40px;
+  border: 4px solid #fff;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background: #0071BC;
+  z-index: 1;
+  opacity: 1;
+}
+@media (min-width: 768px) {
+  .education-and-courses-video__item .plyr__video .plyr__control.plyr__control--overlaid {
+    border: 4.79px solid #fff;
+    width: 67px;
+    height: 67px;
+  }
+}
+.education-and-courses-video__item .plyr__video .js-player:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50.5%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 17.6px;
+  height: 17.6px;
+  background-image: url("../../images/icons/white-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+  opacity: 0.9;
+}
+@media (min-width: 768px) {
+  .education-and-courses-video__item .plyr__video .js-player:after {
+    left: 50.5%;
+    width: 29.48px;
+    height: 29.48px;
+    background-size: 100% 100%;
+  }
+}
+.education-and-courses-video__item .plyr__video .plyr__control.plyr__control--overlaid svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 1px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 17.6px;
+  height: 17.6px;
+  background-image: url("../../images/icons/white-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+  opacity: 0.9;
+}
+.education-and-courses-video__item .plyr__video .plyr__control.plyr__control--overlaid svg use {
+  display: none;
+}
+@media (min-width: 768px) {
+  .education-and-courses-video__item .plyr__video .plyr__control.plyr__control--overlaid svg {
+    margin-left: 2px;
+    left: 50.5%;
+    width: 29.48px;
+    height: 29.48px;
+    background-size: 100% 100%;
+  }
 }
 .education-and-courses-video__item .plyr__video > div > img {
   width: 100%;
@@ -1512,6 +1620,7 @@ section.top-services {
   overflow-x: hidden !important;
   max-width: 100vw !important;
   padding-bottom: 25px;
+  padding-top: 25px;
   margin-top: 55px;
   margin-bottom: 55px;
 }
@@ -1523,8 +1632,8 @@ section.top-services {
 }
 @media (min-width: 1920px) {
   section.top-services {
-    margin-top: 145px;
-    margin-bottom: 145px;
+    margin-top: 95px;
+    margin-bottom: 95px;
   }
 }
 
@@ -1557,6 +1666,11 @@ section.top-services {
   padding: 0 15px;
   opacity: 0;
   transition: opacity 0.3s ease-out;
+}
+@media (max-width: 767.5px) {
+  .top-services .slider__item {
+    padding: 0px;
+  }
 }
 .top-services .slider__item_active {
   opacity: 1;

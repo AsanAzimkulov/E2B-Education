@@ -49,6 +49,110 @@
       margin: 0 auto;
     }
     .plyr__video{
+      .js-player:hover:before {
+        opacity: 1
+      }
+      
+      .js-player:hover:after {
+        opacity: 1
+      }
+      
+      .js-player:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        height: 40px;
+        width: 40px;
+        border: 4px solid #fff;
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+        background: $ui-blue;
+        z-index: 1;
+        opacity: 1;
+        @media(min-width: 768px){
+          border: 4.79px solid #fff;
+          width: 67px;
+          height: 67px;
+        }
+      }
+      .plyr__control.plyr__control--overlaid{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        height: 40px;
+        width: 40px;
+        border: 4px solid #fff;
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+        background: $ui-blue;
+        z-index: 1;
+        opacity: 1;
+        @media(min-width: 768px){
+          border: 4.79px solid #fff;
+          width: 67px;
+          height: 67px;
+        }
+      }
+      
+        .js-player:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50.5%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 17.6px;
+        height: 17.6px;
+        background-image: url('../../images/icons/white-triangle.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 2;
+        opacity: 0.9;
+        @media(min-width: 768px){
+          left: 50.5%;
+          width: 29.48px;
+          height: 29.48px;
+          background-size: 100% 100%;
+        }
+      }
+      .plyr__control.plyr__control--overlaid svg{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: 1px;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 17.6px;
+        height: 17.6px;
+        background-image: url('../../images/icons/white-triangle.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 2;
+        opacity: 0.9;
+        use{
+          display: none;
+        }
+        @media(min-width: 768px){
+          margin-left: 2px;
+          left: 50.5%;
+          width: 29.48px;
+          height: 29.48px;
+          background-size: 100% 100%;
+        }
+      }
+      
+      position: relative;
+      cursor: pointer;
       margin-bottom: 20px;
       filter: drop-shadow(-15px 15px 30px rgba(230, 230, 230, 0.2)) drop-shadow(15px -15px 30px rgba(230, 230, 230, 0.2)) drop-shadow(15px 15px 38px rgba(230, 230, 230, 0.9));
       border-radius: 20px;
