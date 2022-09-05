@@ -1,3 +1,13 @@
+const scrollIntoViewWithOffset = (selector, offset) => {
+  window.scrollTo({
+    behavior: 'smooth',
+    top:
+      document.querySelector(selector).getBoundingClientRect().top -
+      document.body.getBoundingClientRect().top -
+      offset,
+  })
+}
+
 $(document).ready(function () {
   const items = document.querySelectorAll('.toolbar-three-column-toggles');
 
@@ -8,9 +18,12 @@ $(document).ready(function () {
 
     handles.forEach((handle) => {
 
-      handle.addEventListener('click', (e) => {
+      handle.addEventListener('click', function (e) {
+        e.preventDefault();
 
-        handles.forEach(handle => handle.classList.remove('toolbar-three-column-toggles__toggle--active'));       
+        scrollIntoViewWithOffset(this.getAttribute('href'), 60)
+
+        handles.forEach(handle => handle.classList.remove('toolbar-three-column-toggles__toggle--active'));
         handle.classList.add('toolbar-three-column-toggles__toggle--active');
         setTimeout(() => {
           handle.classList.remove('toolbar-three-column-toggles__toggle--active');
